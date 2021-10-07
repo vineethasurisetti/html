@@ -9,7 +9,8 @@
   box-shadow: 1px 1px 3px black;
 }
 .cardbody img{
-  height:50%;
+  width: 50%;
+  height:30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -26,7 +27,61 @@ button{
 }
 .card{
   display:flex;
-  /* flex-direction: row; */
+   flex-direction: column;
+   flex-wrap: wrap;
   justify-content: center;
-  padding: 1%
+  padding: 1%;
+  margin: 1%;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+  .cardbody{
+    border: 2px solid black;
+    border-radius: 3%;
+    width: 90%;
+
+    background: skyblue;
+  }
+  .card{
+    display:flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+    /* background: #ddd; */
+  }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+  .cardbody{
+    border: 2px solid lightgray;
+    border-radius: 3%;
+    width: 40%;
+    background: #ddd;
+    box-shadow: 1px 1px 3px red;
+  }
+  .card{
+    display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+  }
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+  .cardbody{
+    border: 2px solid lightgreen;
+    border-radius: 3%;
+    width: 25%;
+    background: lightgreen;
+    box-shadow: 1px 1px 3px red;
+  }
+  .card{
+    display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+  }
 }
